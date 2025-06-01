@@ -25,7 +25,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy source code
 COPY app/ ./app/
 COPY cost_catalog.csv .
-COPY .env.example .env
 
 # Change ownership to app user
 RUN chown -R app:app /app
